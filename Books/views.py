@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def Home (request):
     return render(request, 'home.html')
+
+def Title(request):
+    return render(request,'title.html')

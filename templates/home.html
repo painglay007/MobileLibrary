@@ -1,15 +1,26 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block title %} Home Page {% endblock%}
+<link href='Book.jpg' rel='shortcut icon' type='image/*' /> {% block body %}
 
-{% block title %} Home Page {% endblock%}
-<link href='Book.jpg' rel='shortcut icon' type='image/*' />
-
-
-
-{% block body %} 
- 
- <img src='https://images.unsplash.com/photo-1610415958517-e320250c90d4?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'/>
-
-
-
+<header>
+    <div class='header-text'>
+        <i class="fas fa-book-reader"></i>
+        <p>Lin Yaung Chi Mobile-Library</p>
+        <i class="fas fa-book-reader"></i>
+    </div>
+</header>
+<div class='paragraph'>
+    <div class='para-1'>
+        <p>
+            Shall I compare thee to a summer’s day? Thou art more lovely and more temperate: Rough winds do shake the darling buds of May, And summer’s lease hath all too short a date; Sometime too hot the eye of heaven shines, And often is his gold complexion dimm'd;
+            And every fair from fair sometime declines, By chance or nature’s changing course untrimm'd; But thy eternal summer shall not fade, Nor lose possession of that fair thou ow’st;
+        </p>
+        <div class="para">
+            <a href='{% url "title" %}'><i class="fas fa-arrow-circle-right para-icon"></i></a>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>&copy;paingthukyaw@gmail.com</p>
+</footer>
 
 {% endblock %}
